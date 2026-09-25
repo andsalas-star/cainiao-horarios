@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cainiao Horarios</title>
+    <meta
+      name="description"
+      content="Consulta segura de horarios operativos sin exponer datos corporativos ni informacion personal."
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Consulta segura</p>
+        <h1 id="page-title">Cainiao Horarios</h1>
+        <p class="intro">
+          Base publica para la aplicacion web de horarios. Esta version no contiene datos reales,
+          nombres de agentes, IDs internos ni copias del Google Sheet corporativo.
+        </p>
+      </section>
+
+      <section class="status-panel" aria-labelledby="status-title">
+        <div>
+          <h2 id="status-title">Estado del proyecto</h2>
+          <p>
+            La interfaz esta lista para GitHub Pages. La conexion de horarios debe hacerse despues
+            mediante una capa segura que entregue solo la informacion permitida.
+          </p>
+        </div>
+        <span class="badge">Sin datos sensibles</span>
+      </section>
+
+      <section class="grid" aria-label="Componentes preparados">
+        <article>
+          <h2>Frontend estatico</h2>
+          <p>HTML, CSS y JavaScript simple para publicar en GitHub Pages sin dependencias.</p>
+        </article>
+        <article>
+          <h2>Privacidad primero</h2>
+          <p>El repositorio publico queda separado del Google Sheet y de cualquier dato de agentes.</p>
+        </article>
+        <article>
+          <h2>Siguiente paso</h2>
+          <p>Definir API, Apps Script web app o backend privado para consultar horarios filtrados.</p>
+        </article>
+      </section>
+
+      <section class="lookup" aria-labelledby="lookup-title">
+        <h2 id="lookup-title">Consulta de horarios</h2>
+        <form id="lookup-form">
+          <label for="lookup-input">Codigo de consulta</label>
+          <div class="form-row">
+            <input
+              id="lookup-input"
+              name="lookup"
+              type="text"
+              autocomplete="off"
+              placeholder="Pendiente de conexion segura"
+              disabled
+            >
+            <button type="submit" disabled>Consultar</button>
+          </div>
+          <p class="hint">
+            La busqueda se activara cuando exista una fuente segura que no exponga la base completa.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
